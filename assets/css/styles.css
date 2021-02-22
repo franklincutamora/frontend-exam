@@ -1,0 +1,517 @@
+html {
+    font-size: 14px;
+}
+
+#body {
+    font-family: 'Gotham Book';
+}
+
+.container {
+    max-width: 1100px;
+}
+
+header {
+    padding: 14px 0;
+}
+
+.header-logo {
+    display: inline-block;
+}
+
+.header-feature-list {
+    font-size: 13.4px;
+    list-style-image: url('../img/list-check-img.png');
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.5em; 
+}
+
+main {
+    background: linear-gradient(#042b65, #1479b7);
+}
+
+main .container {
+    padding: 25px 0 20px;
+}
+
+.page-title h1, .page-sub-title {
+    font-family: 'Gotham';
+    font-weight: 300;
+}
+
+.page-title h1, .page-sub-title {
+    color: #fff;
+}
+
+.page-title h1 {
+    font-size: 42px;
+}
+
+.page-sub-title {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Gotham Book';
+}
+
+/***********/
+/*  FORM   */
+/***********/
+.search-form {
+    color: #fff;
+    font-size: 1.4em;
+    margin: 43px 0;
+}
+
+.search-form label {
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-size: 18px;
+}
+
+form > div {
+    margin-bottom: 30px;
+}
+
+.input-group-prepend, #zipCode, select {
+    height: 60px;
+    border-radius: 30px;
+    position: relative;
+}
+
+#zipCode, select, #zipCode::placeholder {
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(78, 85, 92, .7);
+}
+
+#zipCode, select {
+    padding-left: 60px;
+}
+
+.input-group-text {
+    display: inline-block;
+    background-color: #d68d00;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    left: 15px;
+    position: absolute;
+    top: 15px;
+    width: 30px;
+    z-index: 9;
+    padding: .3rem 0;
+}
+
+datalist {
+    background-color: #ffffff;
+}
+
+datalist option {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#category {
+    font-size: 14px;
+    width: 100%;
+    padding-right: 50px;
+    -moz-appearance: none; 
+    -webkit-appearance: none;
+    appearance: none;
+    background: #ffffff url('../img/select-arrow.png') no-repeat 95% center;
+}
+
+.find-all-category {
+    font-size: 18px;
+}
+
+.find-all-category > a {
+    color: #fff;
+    text-decoration: underline;
+    transition: 1s ease-in-out;
+}
+
+.find-all-category > a:hover {
+    text-decoration: none;
+}
+
+
+
+/***********/
+/* PROFILE */
+/***********/
+aside {
+    color: #fff;
+    padding: 0 25px;
+}
+
+aside h3 {
+    font-size: 20px;
+}
+
+.lawyer-list {
+    border-bottom: 1px solid rgba(255, 255, 255, .26);
+    padding: 25px 0 15px;
+}
+
+.lawyer-list:last-child {
+    border: none;
+}
+
+.lawyer-list .text-right a {
+    color: #fbd243;
+}
+
+.lawyer-list .read-review {
+    font-size: 10px;
+}
+
+.profile-name, .profile-name + small, .law-specialization {
+    font-family: 'Gotham';
+    font-weight: 500;
+}
+
+.profile-name {
+    display: block;
+    font-size: 13px;
+    margin-bottom: -5px;
+}
+
+.profile-name + small {
+    font-size: 11px;
+    color: #dadada;
+}
+
+.law-specialization {
+    font-size: 12px;
+}
+
+.aside-photo {
+    height: 60px;
+    margin-bottom: 10px;
+    width: 60px;
+}
+
+.profile-desc {
+    font-size: 11px;
+    font-style: italic;
+    margin: 9px 0;
+    color: #e4e4e4;
+}
+
+.ratings {
+    color: #d89108;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+
+.copyright-sub {
+    display: block;
+}
+
+footer {
+    margin-bottom: 50px;
+    color: #9e9e9e;
+}
+
+footer .container {
+    border-bottom: 1px solid #efefef;
+    padding: 30px;
+}
+
+.footer-links {
+    margin: 20px 0 30px;
+}
+
+.footer-links > a {
+    color: #929ba4;
+}
+
+.footer-links > span {
+    margin: 0 20px;
+}
+
+.modal-content {
+    padding: 20px 15px 50px;
+}
+
+.modal .input-group-text {
+    display: inline-block;
+    margin-right: 20px;
+    position: initial;
+}
+
+.modal-body .col-6 {
+    margin-bottom: 10px;
+}
+
+#findALawyer {
+    font-family: 'Gotham';
+    font-weight: bold;
+    border-radius: 28px;
+    font-size: 16px;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    background-color: #02377b;
+    margin-top: 30px;
+}
+
+#familyCat .modal-body .question {
+    font-size: 18px;
+    color: #4e555c;
+}
+
+#familyCat .modal-body .question > strong {
+    font-family: 'Gotham';
+    font-weight: bold;
+}
+
+#familyCat .modal-body .col-6 {
+    margin: 10px auto;
+}
+
+#familyCat .modal-body .col-6 input {
+    color: #000000;
+    font-size: 14px;
+}
+
+#otherCat .modal-body .row {
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#otherCat .other-cat-title {
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-size: 21px;
+    color: #2b2c2d;
+}
+
+#otherCat .modal-body > p, #otherCat .modal-body > a {
+    font-size: 14px;
+}
+
+.modal-body .review-title {
+    font-size: 24px;
+}
+
+.modal-body .aside-photo {
+    height: 84px;
+    width: 84px;
+}
+
+.modal-body .profile-name {
+    font-family: 'Gotham Book';
+    font-size: 30px;
+}
+
+.modal-body hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.modal-body .rating .title {
+    font-size: 24px;
+}
+
+.modal-body .rating {
+    font-size: 18px;
+    color: #000000;
+}
+
+.modal-body .address, .modal-body .specialization {
+    font-size: 16px;
+}
+
+.modal-body .address {
+    color: #979da3;
+}
+
+.modal-body .overall, .modal .testimony .client {
+    font-family: 'Gotham';
+    font-weight: 500;
+    color: #000000;
+}
+
+.modal .modal-body .fa-star {
+    color: #d89108;
+}
+
+.modal .modal-body .fa-star.disabled {
+    color: #666;
+}
+
+.modal .ratings-detail {
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #212121;
+}
+
+.modal .testimony .rating {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.modal .testimony .client {
+    font-size: 14px;
+    display: inline-block;
+}
+
+.modal-dialog {
+    margin: 12% auto auto;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-content .bottom-close {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 576px) {
+    .modal-dialog {
+        max-width: 570px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .modal-dialog {
+        max-width: 730px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .header-feature-list {
+        margin-left: 20%;
+    }
+
+    .header-feature-list {
+        font-size: .8rem;
+    }
+
+    .page-title > h1 {
+        font-size: 2.3rem;
+    }
+
+    .page-sub-title {
+        font-size: 1.5rem;
+    }
+
+    .search-form {
+        font-size: 1.2rem;
+    }
+
+    .extra-div {
+        display: none;
+    }
+} 
+
+@media only screen and (max-width: 500px) {
+    .lawyer-list .ratings {
+        display: block;
+        margin-left: 0;
+    }
+
+    .page-title, aside h3 {
+        text-align: center;
+    }
+
+    .profile-name + small {
+        font-size: 9px;
+    }
+
+    .modal-body .rating {
+        font-size: 16px;
+    }
+
+    .modal-body .rating .title {
+        font-size: 18px;
+    }
+
+    #body.modal-open, .modal {
+        padding-right: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .header-feature-list {
+        margin-left: 0;
+    }
+
+    .footer-links > a {
+        display: block;
+    }
+
+    .footer-links > span {
+        display: none;
+    }
+
+    .copyright-sub {
+        padding: 20px 0;
+    }
+
+    .modal-body, .modal-body .row .col-6 {
+        font-size: .9em;
+        padding: 0;
+    }
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../fonts/Gotham-Book.woff2') format('woff2'), url('../fonts/Gotham-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../fonts/Gotham-BookItalic.woff2') format('woff2'), url('../fonts/Gotham-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Light.woff2') format('woff2'), url('../fonts/Gotham-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Medium.woff2') format('woff2'), url('../fonts/Gotham-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Bold.woff2') format('woff2'), url('../fonts/Gotham-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

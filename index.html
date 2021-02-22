@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Legal Match</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body id="body">
+    <header class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <a href="index.html" class="header-logo">
+                    <img src="assets/img/logo.png" alt="Legal Match Company Logo" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-12 col-lg-4">
+                <ul class="header-feature-list">
+                    <li>No fee to present your case</li>
+                    <li>Choose from lawyers in your area</li>
+                    <li>A 100% confidential service</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="col-12">
+                <div class="page-title">
+                    <h1>Find a Lawyer for your Legal Issue</h1>
+                    <div><span class="page-sub-title">Fast, Free and Confidential</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-12 search-form">
+                    <form action="#">
+                        <div class="col-12">
+                            <label for="zipCode">Enter Zip Code or City:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="zipCode" list="addr" placeholder=" Does not have to be where you live" required>
+                                <datalist id="addr">
+                                    <option value="Nowheresville, XX 00000">Nowheresville, XX 00000</option>
+                                    <option value="Adfghjklmnoqrtvwxyz Cebu, Philippines 6000">Adfghjklmnoqrtvwxyz Cebu, Philippines 6000</option>
+                                </datalist>
+                                <span class="input-group-text">1</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="category">Choose a Category:</label>
+                            <div class="input-group">
+                                <select id="category">
+                                    <option value="" disabled selected>Click to choose a legal category</option>
+                                    <option value="family">Family</option>
+                                    <option value="">Criminal Defense</option>
+                                    <option value="">Business</option>
+                                    <option value="">Personal Injury</option>
+                                    <option value="">Bankruptcy &amp; Finances</option>
+                                    <option value="">Products &amp; Services</option>
+                                    <option value="">Employment</option>
+                                    <option value="">Real Estate</option>
+                                    <option value="">Immigration</option>
+                                    <option value="">Wills, Trusts &amp; Estates</option>
+                                    <option value="">Government</option>
+                                    <option value="">Intellectual Property</option>
+                                </select>
+                                <span class="input-group-text">2</span>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-center find-all-category">Can't find your category? <a href="javascript:;" data-toggle="modal" data-target="#otherCat">Click here.</a></div>
+                </div>
+                <div class="col-lg-1 extra-div"></div>
+                <aside class="col-lg-5 col-12">
+                    <h3>Clients review LegalMatch lawyers</h3>
+                    <div class="lawyer-list">
+                        <div class="row">
+                            <div class="col-4 col-sm-3 text-center">
+                                <img src="assets/img/mitchell.png" class="rounded-circle aside-photo" alt="">
+                                <div>
+                                    <strong class="profile-name">Mitchell M.</strong>
+                                    <small>Cherry Hill, NJ</small>
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-9">
+                                <strong class="law-specialization">Family Law</strong>
+                                <div class="ratings">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <p class="profile-desc">
+                                    "Lorem ipsum dolor sit amet, consectetur adispicing elit, sed do eiusmod tempur incididunt ut labore et...
+                                </p>
+                                <div class="text-right read-review">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#mitchellM">Read Review <span class="fa fa-book-open"></span></a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lawyer-list">
+                        <div class="row">
+                            <div class="col-4 col-sm-3 text-center">
+                                <img src="assets/img/joel.png" class="rounded-circle aside-photo" alt="">
+                                <div>
+                                    <strong class="profile-name">Joel C.</strong>
+                                    <small>Little Rock, AK</small>
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-9">
+                                <strong class="law-specialization">Job &amp; Employment Law</strong>
+                                <div class="ratings">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <p class="profile-desc">
+                                    "Lorem ipsum dolor sit amet, consectetur adispicing elit, sed do eiusmod tempur incididunt ut labore...
+                                </p>
+                                <div class="text-right read-review">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#joelC">Read Review <span class="fa fa-book-open"></span></a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lawyer-list">
+                        <div class="row">
+                            <div class="col-4 col-sm-3 text-center">
+                                <img src="assets/img/brigida.png" class="rounded-circle aside-photo" alt="">
+                                <div>
+                                    <strong class="profile-name">Brigida R.</strong>
+                                    <small>Dallas, TX</small>
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-9">
+                                <strong class="law-specialization">Family Law</strong>
+                                <div class="ratings">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star text-white"></span>
+                                </div>
+                                <p class="profile-desc">
+                                    "Lorem ipsum dolor sit amet, consectetur adispicing elit, sed do eiusmod tempur incididunt ut...
+                                </p>
+                                <div class="text-right read-review">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#brigidaR">Read Review <span class="fa fa-book-open"></span></a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-2 text-center">
+                    <a href="index.html"><img src="assets/img/footer-logo.png" alt="LegalMatch company logo on footer"></a>
+                </div>
+                <div class="col-12 col-lg-8 text-center">
+                    <div class="footer-links">
+                        <a href="#">User Agreement</a><span>&bull;</span><a href="#">Privacy Policy</a><span>&bull;</span><a href="#">Site Map</a>
+                    </div>
+                    <div>
+                        <p>
+                            Copyright 1999-2016 LegalMatch. All rights reserved. LegalMatch &copy;
+                            <span class="copyright-sub">the LegalMatch logo, and the tradedress are trademarks of LegalMatch. Patents Pending.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2 text-center">
+                    <img src="assets/img/truste-logo.png" alt="truste logo on footer">
+                    <img src="assets/img/bbb-logo.png" alt="bbb-logo logo on footer">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="familyCat" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="question"><span class="input-group-text">3</span> Which <strong>Family Law</strong> issue(s) apply to your case?</p>
+                    <div class="row">
+                        <div class="col-12 col-sm-6"><input type="checkbox" value="adoptions" name="category"> Adoptions</div>
+                        <div class="col-12 col-sm-6"><input type="checkbox" value="child support" name="category"> Child Support</div>
+                        <div class="col-12 col-sm-6"><input type="checkbox" value="guardianship" name="category"> Guardianship</div>
+                        <div class="col-12 col-sm-6"><input type="checkbox" value="separations" name="category"> Separations</div>
+                        <div class="col-12 col-sm-6"><input type="checkbox" value="child-custody" name="category"> Child Custody and Visitation</div>
+                        <div class="col-12 col-sm-6"><input type="checkbox" value="divorce" name="category"> Divorce</div>
+                        <div class="col-12 col-sm-6"><input type="checkbox" value="paternity" name="category"> Paternity</div>
+                        <div class="col-12 col-sm-6"><input type="checkbox" value="spousal support" name="category"> Spousal Support and Alimony</div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" id="findALawyer">Find a lawyer now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="otherCat" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <strong class="other-cat-title">OTHER CATEGORIES</strong>
+                    <p>the category that best fits your case.</p> 
+                    <div class="row">
+                        <div class="col-12 col-sm-6"><a href="#" >Abuse (Child, Domestic, Sexual)</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Loremipsum Dolorsitamet</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Agencies & Administration</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Lonsectetur Scingelit  (Baseererkj, Mereit)</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Automobile ( DUI, Crimes, Speeding )</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Miam Euvelit</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Automobiles ( Accidents, Insurance )</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Mempor Auctor (Estiarma, Toeruslej)</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Banking ( Business, Consumer )</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Nisultricies Dictumest.</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Bars & Restaurants</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Ntfring Sodalelit (Aeeticl Restoustoust)</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Business Formation & Dissolution</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Ntvarius Lectus & Congue </a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Children (Adoption, Custody, Support)</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Pellentesque</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Class Actions (Bad Drugs, Products)</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Rigula Aliquamattis (Nestusotu, Wewreist)</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Commercial Law and Contracts</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Set Tigulempor</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Commercial Real Estate</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Sehicula Sedsitamet</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Constitutional Law</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Seque Nesturre </a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Construction (Disputes, Liens)</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Tollis Gaurissed</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Categories Item Here</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Tempor Auctor (Estiarma, Toeruslej)</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Employment</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Hire Me</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Professionals</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Machine</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Technology</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Dummy</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Vaerbatumi</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Aquamarine</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Definition</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Texttile</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Elevator</a></div>
+                        <div class="col-12 col-sm-6"><a href="#" >Jumpstart</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mitchellM" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="review-title">CLIENT REVIEWS</div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12 col-sm-2">
+                            <img src="assets/img/mitchell.png" class="rounded-circle aside-photo" alt="">
+                        </div>
+                        <div class="col-12 col-sm-10">
+                            <div>
+                                <strong class="profile-name">Mitchell M.</strong>
+                                <span class="address">Cherry Hill, NJ</span><br/>
+                                <span class="specialization"Family Law</span>
+                            </div>
+                        </div>
+                        <div class="col-12 rating"><span class='title'>Rating</span> (29 users)
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="ratings-detail">
+                        <div class="row">
+                            <div class="col-7 col-sm-8"><div class="overall">Overall</div></div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Responded in a timely manner.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Answered questions clearly.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Understood needs.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Gave complete and clear information.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Knowledge in legal area.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Good value for money.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Would hire again.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Would recommend to a friend.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="testimony">
+                            <div class="rating">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="client">By Dexter Marchal, 06/10/2016</div>
+                            <p>
+                                Deb did a great job. Got my bench warrant set aside... was sure I was going to jail.
+                                ... phew. Judge seemed to respect her and I got what I really hoped.
+                            </p>
+                        </div>
+                        <div class="testimony">
+                            <div class="rating">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="client">By Phil Lamprey, 11/23/2015</div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis iste earum vel, 
+                                explicabo odit dolorum, tempore expedita eum libero provident odio perspiciatis.
+                            </p>
+                        </div>
+                        <div class="testimony">
+                            <div class="rating">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="client">By Jose Manalo, 03/08/2014</div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, 
+                                animi numquam vel facere voluptatum distinctio. Iure illum et omnis ex accusamus.
+                            </p>
+                        </div>
+                        <div class="testimony">
+                            <div class="rating">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="client">By Empoy Gwapo, 09/23/2014</div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corrupti veritatis 
+                                qui maiores, totam, repudiandae, autem consequatur eius et error vel obcaecati.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <a href="javascript:void(0);" class="bottom-close" data-dismiss="modal" aria-label="Close"><span>CLOSE</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="joelC" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="review-title">CLIENT REVIEWS</div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12 col-sm-2">
+                            <img src="assets/img/joel.png" class="rounded-circle aside-photo" alt="">
+                        </div>
+                        <div class="col-12 col-sm-10">
+                            <div>
+                                <strong class="profile-name">Joel C.</strong>
+                                <span class="address">Little Rock, AK</span><br/>
+                                <span class="specialization">Job & Employment Law</span>
+                            </div>
+                        </div>
+                        <div class="col-12 rating"><span class='title'>Rating</span> (29 users)
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="ratings-detail">
+                        <div class="row">
+                            <div class="col-7 col-sm-8"><div class="overall">Overall</div></div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Responded in a timely manner.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star disabled"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Answered questions clearly.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Understood needs.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Gave complete and clear information.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Knowledge in legal area.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Good value for money.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Would hire again.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Would recommend to a friend.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="testimony">
+                            <div class="rating">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <strong>By Dexter Marchal, 06/10/2016</strong>
+                            <p>
+                                Deb did a great job. Got my bench warrant set aside... was sure I was going to jail.
+                                ... phew. Judge seemed to respect her and I got what I really hoped.
+                            </p>
+                        </div>
+                        <div class="testimony">
+                            <div class="rating">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="client">By Jose Manalo, 03/08/2014</div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, 
+                                animi numquam vel facere voluptatum distinctio. Iure illum et omnis ex accusamus.
+                            </p>
+                        </div>
+                        <div class="testimony">
+                            <div class="rating">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="client">By Empoy Gwapo, 09/23/2014</div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corrupti veritatis 
+                                qui maiores, totam, repudiandae, autem consequatur eius et error vel obcaecati.
+                            </p>
+                        </div>
+                        <div class="testimony">
+                            <div class="rating">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="client">By Phil Lamprey, 11/23/2015</div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis iste earum vel, 
+                                explicabo odit dolorum, tempore expedita eum libero provident odio perspiciatis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <a href="javascript:void(0);" class="bottom-close" data-dismiss="modal" aria-label="Close"><span>CLOSE</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="brigidaR" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="review-title">CLIENT REVIEWS</div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12 col-sm-2">
+                            <img src="assets/img/brigida.png" class="rounded-circle aside-photo" alt="">
+                        </div>
+                        <div class="col-12 col-sm-10">
+                            <div>
+                                <strong class="profile-name">Brigida R.</strong>
+                                <span class="address">Dallas, TX</span><br/>
+                                <span class="specialization">Family Law</span>
+                            </div>
+                        </div>
+                        <div class="col-12 rating"><span class='title'>Rating</span> (29 users)
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star disabled"></span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="ratings-detail">
+                        <div class="row">
+                            <div class="col-7 col-sm-8"><div class="overall">Overall</div></div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star disabled"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Responded in a timely manner.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star disabled"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Answered questions clearly.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Understood needs.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star disabled"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Gave complete and clear information.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Knowledge in legal area.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star disabled"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Good value for money.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Would hire again.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star disabled"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7 col-sm-8">Would recommend to a friend.</div>
+                            <div class="col-5 col-sm-4">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="testimony">
+                            <div class="rating">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <strong>By Dexter Marchal, 06/10/2016</strong>
+                            <p>
+                                Deb did a great job. Got my bench warrant set aside... was sure I was going to jail.
+                                ... phew. Judge seemed to respect her and I got what I really hoped.
+                            </p>
+                        </div>
+                        <div class="testimony">
+                            <div class="rating">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="client">By Jose Manalo, 03/08/2014</div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, 
+                                animi numquam vel facere voluptatum distinctio. Iure illum et omnis ex accusamus.
+                            </p>
+                        </div>
+                        <div class="testimony">
+                            <div class="rating">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="client">By Phil Lamprey, 11/23/2015</div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis iste earum vel, 
+                                explicabo odit dolorum, tempore expedita eum libero provident odio perspiciatis.
+                            </p>
+                        </div>
+                        <div class="testimony">
+                            <div class="rating">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="client">By Empoy Gwapo, 09/23/2014</div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corrupti veritatis 
+                                qui maiores, totam, repudiandae, autem consequatur eius et error vel obcaecati.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="text-right">
+                    <a href="javascript:void(0);" class="bottom-close" data-dismiss="modal" aria-label="Close"><span>CLOSE</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
